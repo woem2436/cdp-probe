@@ -1,0 +1,39 @@
+{
+  "name": "cdp-probe",
+  "version": "0.1.0",
+  "description": "Zero-dependency Chrome DevTools Protocol CLI for authorized web security testing: record real browser traffic with bodies, then re-issue requests with the page's own session.",
+  "type": "module",
+  "bin": {
+    "cdp-probe": "bin/cdp-probe.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "engines": {
+    "node": ">=22.4.0"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/cli.mjs",
+    "test:smoke": "node test/smoke.mjs",
+    "test:cli": "node test/cli.mjs",
+    "doctor": "node bin/cdp-probe.mjs doctor"
+  },
+  "keywords": [
+    "cdp",
+    "chrome-devtools-protocol",
+    "security-testing",
+    "pentest",
+    "bug-bounty",
+    "replay",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

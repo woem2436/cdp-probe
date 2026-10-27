@@ -1,0 +1,14 @@
+# recordings and captures can contain session-bearing headers and personal data
+*.jsonl
+*.har
+captures/
+out/
+tmp/
+
+# chrome profiles created by `cdp-probe launch --profile <dir>`
+.chrome-profile/
+
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
